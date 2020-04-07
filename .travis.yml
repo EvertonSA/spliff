@@ -1,0 +1,11 @@
+sudo: required
+language: minimal
+
+services:
+  - docker
+
+build_and_push:
+  provider: script
+  script: bash docker_build_push.sh
+  on:
+    branch: dev
